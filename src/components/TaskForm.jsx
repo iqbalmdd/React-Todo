@@ -1,5 +1,5 @@
 import React from "react";
-import "./TaskForm.css"
+import "./TaskForm.css";
 
 const TaskForm = () => {
   return (
@@ -12,21 +12,24 @@ const TaskForm = () => {
         />
         {/* Button Tag */}
         <div className="task_form_bottom_line">
-          <button className="tag">HTML</button>
-          <button className="tag">CSS</button>
-          <button className="tag">JavaScript</button>
-          <button className="tag">React</button>
-
+          <div>
+            <button className="tag">HTML</button>
+            <button className="tag">CSS</button>
+            <button className="tag">JavaScript</button>
+            <button className="tag">React</button>
+          </div>
           {/* DropDown */}
-          <select className="task_status">
-            <option value="todo">To Do</option>
-            <option value="doing">Doing</option>
-            <option value="done">Done</option>
-          </select>
-          {/* Submit Button */}
-          <button className="task_submit" type="submit">
-            + Add Task
-          </button>
+          <div>
+            <select className="task_status">
+              <option value="todo">To Do</option>
+              <option value="doing">Doing</option>
+              <option value="done">Done</option>
+            </select>
+            {/* Submit Button */}
+            <button className="task_submit" type="submit">
+              + Add Task
+            </button>
+          </div>
         </div>
       </form>
     </header>
